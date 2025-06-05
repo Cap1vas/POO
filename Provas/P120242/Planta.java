@@ -1,15 +1,10 @@
-package Provas.P120222;
-import java.util.*;
-
+package Provas.P120242;
 
 public class Planta {
     private String id;
     private String nome;
     private double tamanho;
 
-    public Planta(String id){
-        this.id = id;
-    }
 
     public String getId() {
         return id;
@@ -34,12 +29,11 @@ public class Planta {
     public void setTamanho(double tamanho) {
         this.tamanho = tamanho;
     }
-    //Sobreescreve o método toString
+
     public String toString(){
-        return id + "@ " + nome + "@ " + tamanho;
+        return "ID:" +  getId() + "," + "Nome:" + getNome() + "," + "Tamanho:" + getTamanho();
     }
 
-    //ESTUDAR ISSO
     public boolean equals(Object o){
         if(o instanceof Planta){
             Planta p = (Planta) o;
@@ -47,5 +41,8 @@ public class Planta {
         }
         return false;
     }
-    
+
+    public Planta(String id){
+        this.id = id;
+    }
 }

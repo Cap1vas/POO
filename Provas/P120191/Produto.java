@@ -1,40 +1,35 @@
-package Provas.P120232;
-
-import Provas.P120222.Planta;
+package Provas.P120191;
 
 public class Produto {
     private String id;
     private String cor;
-    private Double preco;
-
+    private double preco;
     public String getId() {
         return id;
     }
-
     public void setId(String id) {
         this.id = id;
     }
-
     public String getCor() {
         return cor;
     }
-
     public void setCor(String cor) {
         this.cor = cor;
     }
-
-    public Double getPreco() {
+    public double getPreco() {
         return preco;
     }
-
-    public void setPreco(Double preco) {
+    public void setPreco(double preco) {
         this.preco = preco;
     }
-    
-    public String toString(String str){
-        return getId() + "" + getCor() + "" + getPreco();
+
+    public Produto(String id){
+        this.id=id;
     }
 
+    public String toString(){
+        return getId() + "-" + getCor() + "-" + getPreco();
+    }
 
     public boolean equals(Object o){
         if(o instanceof Produto){
@@ -43,8 +38,6 @@ public class Produto {
         }
         return false;
     }
-
-    public Produto(String id){
-        this.id = id;
-    }
+    
+    
 }
