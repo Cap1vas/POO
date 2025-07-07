@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Utils {
     
-    public Map retornaDados(Set conjuntosCriaturas){
+    public Map retornaDados(Set conjuntosCriaturas) throws FormatoIncorretoException{
         Map mapa = new HashMap();
         Iterator i = conjuntosCriaturas.iterator();
         while(i.hasNext()){
