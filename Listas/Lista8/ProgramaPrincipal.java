@@ -6,7 +6,7 @@ public class ProgramaPrincipal {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Set <String> entrada = new HashSet<String>();
-        for(int i =0;i<2;i++){
+        for(int i =0;i<100;i++){
             entrada.add(sc.nextLine());
         }
         try{
